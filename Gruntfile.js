@@ -91,10 +91,8 @@ module.exports = function (grunt) {
 
     'release': {
       'options': {
-        'beforeReleaseTasks' : ['build', 'prompt'],
         'additionalFiles': ['bower.json'],
         'github' : {
-          'apiRoot': 'https://git.example.com/v3',
           'repo': 'turixspot/angular-input-interval',
           'usernameVar': 'github.auth.user',
           'passwordVar': 'github.auth.password'
@@ -113,5 +111,11 @@ module.exports = function (grunt) {
       'karma:dist',
       'uglify',
       'karma:minified'
+    ]);
+  grunt.registerTask('release',
+    [
+      'build',
+      'prompt',
+      'release',
     ]);
 };
