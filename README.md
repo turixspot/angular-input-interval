@@ -3,6 +3,8 @@ PEGjs based input interval. You can specify a time unit after a time value 'X', 
 
 This component is inspired by JIRA input interval component.
 
+<a href="http://htmlpreview.github.io/?https://github.com/turixspot/angular-input-interval/blob/master/example/index.html" target="_blank">Demo</a> page
+
 ## Usage:
 
 1. include as a dependency for your app.
