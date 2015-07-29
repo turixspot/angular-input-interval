@@ -6,6 +6,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-release');
+  grunt.renameTask('release', 'github-release');
 
   grunt.initConfig({
     'pkg': grunt.file.readJSON('package.json'),
@@ -116,6 +117,6 @@ module.exports = function (grunt) {
     [
       'build',
       'prompt',
-      'release',
+      'github-release',
     ]);
 };
