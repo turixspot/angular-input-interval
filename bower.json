@@ -1,0 +1,9 @@
+{
+    "name": "angular-input-interval",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular":          "1.4.3",
+        "angular-mocks":    "1.4.3"
+    },
+    "analytics": false
+}

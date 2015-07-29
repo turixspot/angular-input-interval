@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
+    <!-- interval -->
+    <script src="../src/angular-input-interval.js"></script>
+    <script>
+      angular.module('Example', ['angular-input-interval'])
+      .controller('ExampleCtrl', function ($scope) {
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme.css">
+  </head>
+  <body ng-app="Example" ng-controller="ExampleCtrl">
+    <div class="container">
+      <h1>Angular input interval <small>usage example</small></h1>  
+      <p>
+        You can specify a time unit after a time value 'X', such as Xw, Xd, Xh, Xm or Xs, to represent weeks (w), days (d), hours (h), minutes (m) and seconds (s), respectively. <code>interval</code> will be available 
+        in controller <code>$scope</code> in ms.
+      </p>
+      <div class="row">
+        <form class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="(eg. 3w 4d 12h)" ng-model="interval" ng-interval>
+          </div>
+          <div class="form-group">
+            <label>Value in ms: </label> {{interval}}
+          </div>
+        </form>
+        <div class="col-md-8">
+          <pre>
+
+&lt;form class=&quot;col-md-6&quot;&gt;
+   &lt;legend&gt;Simple example&lt;/legend&gt;
+   &lt;div class=&quot;form-group&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; ng-model=&quot;interval&quot; ng-interval&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;Value in ms: &lt;/label&gt; {{interval}}
+   &lt;/div&gt;
+&lt;/form&gt;
+          </pre>
+        </div>
+      </div>
+    <footer>Developed by <a href="http://www.turix.com.ar">Turix</a></footer>
+    </div>
+  </body>
+</html>
