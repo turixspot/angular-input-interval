@@ -1,6 +1,6 @@
 {
   "name": "angular-input-interval",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An AngularJS directive to translate interval notation to milliseconds",
   "readme": "README.md",
   "repository": {
