@@ -1,5 +1,5 @@
 # angular-input-interval
-PEGjs based input interval. You can specify a time unit after a time value 'X', such as Xw, Xd, Xh, Xm or Xs, to represent weeks (w), days (d), hours (h), minutes (m) and seconds (s), respectively. interval will be available in controller $scope in ms.
+PEGjs based input interval. You can specify a time unit after a time value 'X', such as Xw, Xd, Xh, Xm or Xs, to represent weeks (w), days (d), hours (h), minutes (m) and seconds (s), respectively. interval will be available as milliseconds in the $scope of a controller.
 
 This component is inspired by JIRA input interval component.
 
