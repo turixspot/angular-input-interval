@@ -18,8 +18,16 @@ This component is inspired by JIRA input interval component.
     ```html
     <script type='text/javascript' src='angular-input-interval.min.js'></script>
     ```
+3. use it in your forms
 
-3. That's it -- you're done!
+    ```html
+      <form>
+         <input type="text" ng-model="interval" ng-interval>
+         <label>Value in ms: </label> 1800000
+      </form>
+    ```
+
+4. That's it -- you're done!
 
 #### via bower:
 ```
@@ -29,3 +37,13 @@ $ bower install angular-input-interval
 ```
 $ npm install angular-input-interval
 ```
+
+#### via maven/webjars:
+```
+<dependency>
+	<groupId>org.webjars.bower</groupId>
+	<artifactId>angular-input-interval</artifactId>
+	<version>0.0.2</version>
+</dependency>
+```
+
