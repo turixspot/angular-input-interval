@@ -23,7 +23,7 @@ This component is inspired by JIRA input interval component.
     ```html
       <form>
          <input type="text" ng-model="interval" ng-interval>
-         <label>Value in ms: </label> 1800000
+         <label>Value in ms: </label> {{interval}}
       </form>
     ```
 
